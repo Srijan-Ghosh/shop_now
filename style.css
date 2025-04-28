@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Spartan",sans-serif;
+
+}
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #DDBEA9;
+    /* gap: 400px; */
+    z-index: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-btn {
+    margin: auto;
+    margin-right: 90px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: static; */
+    font-weight: bold;
+
+}
+
+.nav-btn a,
+.fa-magnifying-glass {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(121, 115, 115);
+
+
+}
+
+.search .fa-magnifying-glass:hover{
+    font-size: 18px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.search {
+    width: 400px;
+}
+
+.search-box {
+    display: none; /* Initially hidden */
+    line-height: 30px;
+    width: 0px; /* Start with zero width */
+    border: 2px solid rgb(165, 124, 71);
+    position: static;
+    border-radius: 5px;
+    opacity: 0;
+    transition: width 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-btn a::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: rgb(121, 115, 115);
+
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+    transition: 0.3s ease;
+}
+
+.nav-btn a:hover::after{
+    width: 50%;
+}
+
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+}
+
+.account button {
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(121, 115, 115);
+    /* Bright blue */
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.account button:hover {
+    cursor: pointer;
+    background-color: #dbdbcb;
+
+}
+
+
+.body-low {
+    position: relative;
+    top: 600px;
+    /* height: 100vh; */
+    width: 94%;
+    background-color: #B7B7A4;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Auto-responsive columns */
+    gap: 20px;
+    /* Spacing between cards */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/horizontal-sale-banner-template_23-2148897328.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    width: 240px;
+    margin: auto;
+}
+
+.card-img {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEw2ce40BkWdXvgMffW8BefaU8jogoAzSNDA&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: inline-block;
+    height: 335px;
+    width: 100%;
+
+
+}
+
+.card-title {
+    border-radius: 10px;
+    background-color: #DDBEA9;
+    text-align: center;
+    /* Ensures text is centered if it wraps */
+    font-weight: bold;
+    /* Optional: Make text bold */
+
+}
